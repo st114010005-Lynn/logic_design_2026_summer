@@ -1,6 +1,7 @@
 /*
 Pi = Ai ⊕ Bi
 Gi = Ai ． Bi
+
 C1 = G0 + P0 ． C0
 C2 = G1 + P1 ． C1 = G1 + P1 ． G0 + P1 ． P0 ． C0
 C3 = G2 + P2 ． C2 = G2 + P2 ． G1 + P2 ． P1 ． G0 + P2 ． P1 ． P0 ． C0
@@ -151,7 +152,7 @@ module CLA_AddSub_8bit(
 
     // 3. 實例化高 4 位元 CLA 加法器 (處理 bit 4 ~ 7)
     // 這裡的 cin 接低位加法器的 cout (c_mid)
-    // 這裡輸出的 c3_out 對應到整個 8-bit 加法器的第 7 個進位 (c7)，是用來算溢位的關鍵
+    // 這裡輸出的 c3_out 對應到整個 8-bit 加法器的第 7 個進位 (c7)，是用來算溢位的
     cla_4bit cla_high (
         .a(a[7:4]),
         .b(b_in[7:4]),

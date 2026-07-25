@@ -1,3 +1,5 @@
+`include "HW1_a.v"
+
 `timescale 1ns / 1ps // 定義時間單位與精確度
 
 module tb_CLA_AddSub_8bit;
