@@ -1,5 +1,3 @@
-`include "HW1_a.v"
-
 `timescale 1ns / 1ps // 定義時間單位與精確度
 
 module tb_CLA_AddSub_8bit;
@@ -24,6 +22,11 @@ module tb_CLA_AddSub_8bit;
 
     // 3. 產生測試訊號
     initial begin
+        // 1. 指定要產生的波形檔案名稱 ( HW1_wave.vcd )
+        $dumpfile("HW1_wave.vcd");
+        // 2. 指定要記錄哪個模組的訊號 ( 0 代表記錄 tb 內部的所有訊號線 )
+        $dumpvars(0, tb_CLA_AddSub_8bit);
+
         // 初始化輸出格式，方便在 Console 視窗直接看結果
         $monitor("Time=%0dns | mode=%b | a=%d (%h) | b=%d (%h) | s=%d (%h) | c8=%b | overflow=%b", 
                  $time, mode, a, a, b, b, s, s, c8, overflow);
@@ -53,7 +56,7 @@ module tb_CLA_AddSub_8bit;
         #10;
 
         // 結束模擬
-        $display("模擬結束！");
+        $display("finish testing!");
         $finish;
     end
       
