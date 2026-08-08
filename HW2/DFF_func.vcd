@@ -1,0 +1,126 @@
+$date
+	Sat Aug 08 16:54:31 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module DFF_func_tb $end
+$var wire 1 ! nQ $end
+$var wire 1 " Q $end
+$var reg 1 # CLK $end
+$var reg 1 $ D $end
+$scope module uut $end
+$var wire 1 # CLK $end
+$var wire 1 $ D $end
+$var wire 1 " Q $end
+$var wire 1 % Q1 $end
+$var wire 1 & nCLK $end
+$var wire 1 ' nD $end
+$var wire 1 ! nQ $end
+$var wire 1 ( nQ1 $end
+$var wire 1 ) nR1 $end
+$var wire 1 * nR2 $end
+$var wire 1 + nS1 $end
+$var wire 1 , nS2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x,
+x+
+x*
+x)
+x(
+1'
+0&
+x%
+0$
+1#
+x"
+x!
+$end
+#2000
+1,
+1*
+0)
+1+
+#4000
+1(
+#6000
+0%
+#20000
+1&
+0#
+#22000
+0*
+1)
+#24000
+1!
+#26000
+0"
+#40000
+0&
+1#
+#42000
+1*
+0)
+#50000
+0'
+1$
+#52000
+1)
+0+
+#54000
+1%
+#56000
+0(
+#80000
+1&
+0#
+#82000
+0,
+1+
+#84000
+1"
+#86000
+0!
+#100000
+0&
+1#
+#102000
+1,
+0+
+#110000
+1'
+0$
+#112000
+0)
+1+
+#114000
+1(
+#116000
+0%
+#140000
+1&
+0#
+#142000
+0*
+1)
+#144000
+1!
+#146000
+0"
+#160000
+0&
+1#
+#162000
+1*
+0)
+#200000
